@@ -25,7 +25,7 @@ pipeline {
                 stage('Deploying now') {
                     agent {
                         docker {
-                            resueNode true
+                            reuseNode true
                             image 'nginx'
                         }
                     }
